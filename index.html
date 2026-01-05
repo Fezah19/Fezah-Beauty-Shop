@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Fezah Beauty Shop — Glow your way</title>
+  <meta name="description" content="Curated beauty products and practical guidance in Ongata Rongai. Glow your way." />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container nav">
+      <a class="logo" href="#">Fezah Beauty Shop</a>
+      <nav>
+        <a href="#products">Products</a>
+        <a href="#about">About</a>
+        <a href="#contact">Contact</a>
+        <a class="btn primary" href="https://wa.me/2547XXXXXXXX" target="_blank" rel="noopener">WhatsApp</a>
+      </nav>
+    </div>
+  </header>
+
+  <section class="hero">
+    <div class="container hero-content">
+      <h1>Glow your way—curated beauty for real life.</h1>
+      <p>Trusted products, honest guidance, and bundles that fit your routine and budget in Ongata Rongai.</p>
+      <div class="cta-group">
+        <a class="btn primary" href="#products">Shop curated kits</a>
+        <a class="btn secondary" href="#contact">Get a quick match</a>
+      </div>
+    </div>
+  </section>
+
+  <section id="products" class="section">
+    <div class="container">
+      <h2>Featured products</h2>
+      <div class="grid">
+        <article class="card">
+          <img src="assets/serum.jpg" alt="Hydrating serum" />
+          <h3>Hydrating Serum</h3>
+          <p>Lightweight glow booster with hyaluronic acid—perfect for daily use.</p>
+          <div class="price">KSh 1,250</div>
+          <button class="btn small add-to-cart" data-name="Hydrating Serum">Add</button>
+        </article>
+        <article class="card">
+          <img src="assets/sunscreen.jpg" alt="Daily sunscreen" />
+          <h3>Daily Sunscreen SPF 50</h3>
+          <p>No white cast, broad spectrum protection for all skin tones.</p>
+          <div class="price">KSh 1,600</div>
+          <button class="btn small add-to-cart" data-name="Daily Sunscreen SPF 50">Add</button>
+        </article>
+        <article class="card">
+          <img src="assets/hair-oil.jpg" alt="Nourishing hair oil" />
+          <h3>Nourishing Hair Oil</h3>
+          <p>Strengthens natural hair and adds shine without heaviness.</p>
+          <div class="price">KSh 950</div>
+          <button class="btn small add-to-cart" data-name="Nourishing Hair Oil">Add</button>
+        </article>
+        <article class="card">
+          <img src="assets/lipstick.jpg" alt="Matte lipstick" />
+          <h3>Matte Lipstick</h3>
+          <p>Long‑wear comfort matte in everyday shades.</p>
+          <div class="price">KSh 850</div>
+          <button class="btn small add-to-cart" data-name="Matte Lipstick">Add</button>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section id="about" class="section alt">
+    <div class="container about">
+      <div>
+        <h2>About us</h2>
+        <p>We’re your neighborhood beauty shop in Rongai. We curate products that work and guide you with practical tips—no hype, just results.</p>
+        <ul class="bullets">
+          <li><strong>Curated:</strong> Tested products for real routines.</li>
+          <li><strong>Inclusive:</strong> Beauty for every skin tone and hair type.</li>
+          <li><strong>Local:</strong> Convenient pickup and friendly support.</li>
+        </ul>
+      </div>
+      <div class="about-card">
+        <h3>Workshops</h3>
+        <p>Join our monthly demos—shade matching, routine building, and safe product use.</p>
+        <a class="btn secondary" href="#contact">Reserve a spot</a>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact" class="section">
+    <div class="container contact">
+      <h2>Contact</h2>
+      <p>Questions or orders? Send us a message—we’ll reply within a day.</p>
+      <form id="contact-form">
+        <div class="form-row">
+          <label for="name">Name</label>
+          <input id="name" name="name" type="text" required />
+        </div>
+        <div class="form-row">
+          <label for="email">Email</label>
+          <input id="email" name="email" type="email" required />
+        </div>
+        <div class="form-row">
+          <label for="message">Message</label>
+          <textarea id="message" name="message" rows="5" required></textarea>
+        </div>
+        <button class="btn primary" type="submit">Send</button>
+        <p id="form-status" class="status" aria-live="polite"></p>
+      </form>
+      <div class="contact-details">
+        <p><strong>Location:</strong> Ongata Rongai, Kajiado County</p>
+        <p><strong>Hours:</strong> Mon–Sat, 9:00–18:00</p>
+        <p><strong>WhatsApp:</strong> <a href="https://wa.me/2547XXXXXXXX" target="_blank" rel="noopener">Chat now</a></p>
+      </div>
+    </div>
+  </section>
+
+  <footer class="site-footer">
+    <div class="container footer">
+      <p>&copy; <span id="year"></span> Fezah Beauty Shop — Glow your way</p>
+      <nav class="footer-nav">
+        <a href="#products">Products</a>
+        <a href="#about">About</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
